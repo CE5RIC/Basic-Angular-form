@@ -10,15 +10,14 @@
   <input type="text" id="phone" name="phone"><br>
   <label for="languages">Favourite languages:</label><br>
 
-
+  <select name="language" id="lg">
+  <option *ngFor="let language of languages">
+    {{language}}
+  </option >
+  </select>
   <button type="submit">Submit</button>
 
 </form>
 
 
-<select id="languages" name="languages list" form="languages">
-  <option value="html">Html</option>
-  <option value="saab">Css</option>
-  <option value="opel">JS</option>
-  <option value="audi">PHP</option>
-</select><br>
+
